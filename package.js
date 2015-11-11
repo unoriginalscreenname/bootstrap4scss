@@ -25,8 +25,6 @@ Package.onUse(function(api) {
     'ecmascript',
   	'fourseven:scss'
   ]);
-  //path to bootstrap
-  var bootstrapPath = path.join(path.resolve("."), "packages", "bootstrap4scss", "bootstrap");
 
   //files in the mixin directory
   var mixinSrc = path.join(bootstrapPath, "scss/mixins")
