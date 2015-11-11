@@ -1,0 +1,109 @@
+// Core variables and mixins
+@import "{ericmcgregor:bootstrap4scss}/bootstrap/scss/variables";
+// @import "{ericmcgregor:bootstrap4scss}/bootstrap/scss/mixins";
+
+@mixin border-radius($radius: $border-radius) {
+  @if $enable-rounded {
+    border-radius: $radius;
+  }
+}
+
+@mixin box-shadow($shadow...) {
+  @if $enable-shadows {
+    box-shadow: $shadow;
+  }
+}
+
+@mixin transition($transition...) {
+  @if $enable-transitions {
+    transition: $transition;
+  }
+}
+
+// Utilities
+@import "{ericmcgregor:bootstrap4scss}/bootstrap/scss/mixins/breakpoints";
+@import "{ericmcgregor:bootstrap4scss}/bootstrap/scss/mixins/hide-text";
+@import "{ericmcgregor:bootstrap4scss}/bootstrap/scss/mixins/hover";
+@import "{ericmcgregor:bootstrap4scss}/bootstrap/scss/mixins/image";
+@import "{ericmcgregor:bootstrap4scss}/bootstrap/scss/mixins/label";
+@import "{ericmcgregor:bootstrap4scss}/bootstrap/scss/mixins/reset-filter";
+@import "{ericmcgregor:bootstrap4scss}/bootstrap/scss/mixins/resize";
+@import "{ericmcgregor:bootstrap4scss}/bootstrap/scss/mixins/responsive-visibility";
+@import "{ericmcgregor:bootstrap4scss}/bootstrap/scss/mixins/screen-reader";
+@import "{ericmcgregor:bootstrap4scss}/bootstrap/scss/mixins/size";
+@import "{ericmcgregor:bootstrap4scss}/bootstrap/scss/mixins/tab-focus";
+@import "{ericmcgregor:bootstrap4scss}/bootstrap/scss/mixins/reset-text";
+@import "{ericmcgregor:bootstrap4scss}/bootstrap/scss/mixins/text-emphasis";
+@import "{ericmcgregor:bootstrap4scss}/bootstrap/scss/mixins/text-truncate";
+
+// // Components
+@import "{ericmcgregor:bootstrap4scss}/bootstrap/scss/mixins/alert";
+@import "{ericmcgregor:bootstrap4scss}/bootstrap/scss/mixins/buttons";
+@import "{ericmcgregor:bootstrap4scss}/bootstrap/scss/mixins/pagination";
+@import "{ericmcgregor:bootstrap4scss}/bootstrap/scss/mixins/list-group";
+@import "{ericmcgregor:bootstrap4scss}/bootstrap/scss/mixins/nav-divider";
+@import "{ericmcgregor:bootstrap4scss}/bootstrap/scss/mixins/forms";
+@import "{ericmcgregor:bootstrap4scss}/bootstrap/scss/mixins/progress";
+@import "{ericmcgregor:bootstrap4scss}/bootstrap/scss/mixins/table-row";
+
+// // Skins
+@import "{ericmcgregor:bootstrap4scss}/bootstrap/scss/mixins/background-variant";
+@import "{ericmcgregor:bootstrap4scss}/bootstrap/scss/mixins/border-radius";
+@import "{ericmcgregor:bootstrap4scss}/bootstrap/scss/mixins/gradients";
+
+// // Layout
+@import "{ericmcgregor:bootstrap4scss}/bootstrap/scss/mixins/clearfix";
+@import "{ericmcgregor:bootstrap4scss}/bootstrap/scss/mixins/center-block";
+// @import "{ericmcgregor:bootstrap4scss}/bootstrap/scss/mixins/navbar-align";
+@import "{ericmcgregor:bootstrap4scss}/bootstrap/scss/mixins/grid-framework";
+@import "{ericmcgregor:bootstrap4scss}/bootstrap/scss/mixins/grid";
+@import "{ericmcgregor:bootstrap4scss}/bootstrap/scss/mixins/pulls";
+
+
+
+
+// // Reset and dependencies
+@import "{ericmcgregor:bootstrap4scss}/bootstrap/scss/normalize";
+@import "{ericmcgregor:bootstrap4scss}/bootstrap/scss/print";
+
+// Core CSS
+@import "{ericmcgregor:bootstrap4scss}/bootstrap/scss/reboot";
+@import "{ericmcgregor:bootstrap4scss}/bootstrap/scss/type";
+@import "{ericmcgregor:bootstrap4scss}/bootstrap/scss/images";
+@import "{ericmcgregor:bootstrap4scss}/bootstrap/scss/code";
+@import "{ericmcgregor:bootstrap4scss}/bootstrap/scss/grid";
+@import "{ericmcgregor:bootstrap4scss}/bootstrap/scss/tables";
+@import "{ericmcgregor:bootstrap4scss}/bootstrap/scss/forms";
+@import "{ericmcgregor:bootstrap4scss}/bootstrap/scss/buttons";
+
+// // Components
+@import "{ericmcgregor:bootstrap4scss}/bootstrap/scss/animation";
+@import "{ericmcgregor:bootstrap4scss}/bootstrap/scss/dropdown";
+@import "{ericmcgregor:bootstrap4scss}/bootstrap/scss/button-group";
+@import "{ericmcgregor:bootstrap4scss}/bootstrap/scss/input-group";
+@import "{ericmcgregor:bootstrap4scss}/bootstrap/scss/custom-forms";
+@import "{ericmcgregor:bootstrap4scss}/bootstrap/scss/nav";
+@import "{ericmcgregor:bootstrap4scss}/bootstrap/scss/navbar";
+@import "{ericmcgregor:bootstrap4scss}/bootstrap/scss/card";
+@import "{ericmcgregor:bootstrap4scss}/bootstrap/scss/breadcrumb";
+@import "{ericmcgregor:bootstrap4scss}/bootstrap/scss/pagination";
+@import "{ericmcgregor:bootstrap4scss}/bootstrap/scss/pager";
+@import "{ericmcgregor:bootstrap4scss}/bootstrap/scss/labels";
+@import "{ericmcgregor:bootstrap4scss}/bootstrap/scss/jumbotron";
+@import "{ericmcgregor:bootstrap4scss}/bootstrap/scss/alert";
+@import "{ericmcgregor:bootstrap4scss}/bootstrap/scss/progress";
+@import "{ericmcgregor:bootstrap4scss}/bootstrap/scss/media";
+@import "{ericmcgregor:bootstrap4scss}/bootstrap/scss/list-group";
+@import "{ericmcgregor:bootstrap4scss}/bootstrap/scss/responsive-embed";
+@import "{ericmcgregor:bootstrap4scss}/bootstrap/scss/close";
+
+// Components w/ JavaScript
+@import "{ericmcgregor:bootstrap4scss}/bootstrap/scss/modal";
+@import "{ericmcgregor:bootstrap4scss}/bootstrap/scss/tooltip";
+@import "{ericmcgregor:bootstrap4scss}/bootstrap/scss/popover";
+@import "{ericmcgregor:bootstrap4scss}/bootstrap/scss/carousel";
+
+// Utility classes
+@import "{ericmcgregor:bootstrap4scss}/bootstrap/scss/utilities";
+@import "{ericmcgregor:bootstrap4scss}/bootstrap/scss/utilities-spacing";
+@import "{ericmcgregor:bootstrap4scss}/bootstrap/scss/utilities-responsive";
