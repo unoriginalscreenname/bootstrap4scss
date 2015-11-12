@@ -22,8 +22,11 @@ Package.onUse(function(api) {
 
   api.use([
     'ecmascript',
-  	'fourseven:scss'
+  	'fourseven:scss',
+    'jquery',
   ]);
+  var jsSrc = path.join(bootstrapPath, "dist", "js", "bootstrap.js")
+  api.add_files(jsSrc, "client");
 
   //files in the mixin directory
   var mixinSrc = path.join(bootstrapPath, "scss", "mixins")
