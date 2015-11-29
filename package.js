@@ -15,7 +15,7 @@ Package.onUse(function(api) {
 
   api.use([
     'ecmascript',
-  	'fourseven:scss',
+  	'fourseven:scss@3.4.1',
     'jquery',
   ]);
 
