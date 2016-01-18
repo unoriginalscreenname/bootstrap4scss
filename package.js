@@ -1,6 +1,6 @@
 Package.describe({
   name: 'ericmcgregor:bootstrap4scss',
-  version: '0.0.1',
+  version: '0.0.2',
   // Brief, one-line summary of the package.
   summary: 'meteor implementation of bootstrap 4 scss',
   // URL to the Git repository containing the source code for this package.
@@ -19,6 +19,7 @@ Package.onUse(function(api) {
     'jquery',
   ]);
 
+  api.add_files('tether.js', "client");
   api.add_files('bootstrap/dist/js/bootstrap.js', "client");
 
   api.add_files([
@@ -55,39 +56,6 @@ Package.onUse(function(api) {
     'bootstrap/scss/mixins/_text-emphasis.scss',
     'bootstrap/scss/mixins/_text-hide.scss',
     'bootstrap/scss/mixins/_text-truncate.scss'
-
-
-      // 'bootstrap/scss/mixins/_alert.scss',
-      // 'bootstrap/scss/mixins/_background-variant.scss',
-      // 'bootstrap/scss/mixins/_border-radius.scss',
-      // 'bootstrap/scss/mixins/_breakpoints.scss',
-      // 'bootstrap/scss/mixins/_buttons.scss',
-      // 'bootstrap/scss/mixins/_center-block.scss',
-      // 'bootstrap/scss/mixins/_clearfix.scss',
-      // 'bootstrap/scss/mixins/_forms.scss',
-      // 'bootstrap/scss/mixins/_gradients.scss',
-      // 'bootstrap/scss/mixins/_grid-framework.scss',
-      // 'bootstrap/scss/mixins/_grid.scss',
-      // // 'bootstrap/scss/mixins/_hide-text.scss',
-      // 'bootstrap/scss/mixins/_hover.scss',
-      // 'bootstrap/scss/mixins/_image.scss',
-      // 'bootstrap/scss/mixins/_label.scss',
-      // 'bootstrap/scss/mixins/_list-group.scss',
-      // 'bootstrap/scss/mixins/_nav-divider.scss',
-      // 'bootstrap/scss/mixins/_navbar-align.scss',
-      // 'bootstrap/scss/mixins/_pagination.scss',
-      // 'bootstrap/scss/mixins/_progress.scss',
-      // 'bootstrap/scss/mixins/_pulls.scss',
-      // 'bootstrap/scss/mixins/_reset-filter.scss',
-      // 'bootstrap/scss/mixins/_reset-text.scss',
-      // 'bootstrap/scss/mixins/_resize.scss',
-      // // 'bootstrap/scss/mixins/_responsive-visibility.scss',
-      // 'bootstrap/scss/mixins/_screen-reader.scss',
-      // 'bootstrap/scss/mixins/_size.scss',
-      // 'bootstrap/scss/mixins/_tab-focus.scss',
-      // 'bootstrap/scss/mixins/_table-row.scss',
-      // 'bootstrap/scss/mixins/_text-emphasis.scss',
-      // 'bootstrap/scss/mixins/_text-truncate.scss'
     ],
     "client", {
       isImport: true
@@ -143,7 +111,7 @@ Package.onUse(function(api) {
     }
   )
 
-  api.add_files('bootstrap.scss', "client", {isImport:true});
+  api.add_files('_bootstrap.scss', "client", {isImport:true});
 
 });
 
